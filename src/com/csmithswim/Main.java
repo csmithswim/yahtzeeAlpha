@@ -1,8 +1,23 @@
 package com.csmithswim;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+    Random rand = new Random();
+    Hand myHand = new Hand(5);
+    myHand.roll(rand);
+    System.out.println(myHand);
+    myHand.roll(rand);
+    System.out.println(myHand);
+    myHand.roll(rand);
+    System.out.println(myHand);
+
+
+
+
     }
+
 }
