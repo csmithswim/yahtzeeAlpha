@@ -8,16 +8,13 @@ public class Main {
 
     Random rand = new Random();
     Hand myHand = new Hand(5);
+
+    Console.welcome();
     myHand.roll(rand);
     System.out.println(myHand);
-    myHand.roll(rand);
+    myHand.roll(rand, Console.getChoice());
     System.out.println(myHand);
-    myHand.roll(rand);
+    myHand.roll(rand, Console.getChoice());
     System.out.println(myHand);
-
-
-
-
     }
-
 }
