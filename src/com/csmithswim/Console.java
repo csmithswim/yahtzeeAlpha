@@ -1,5 +1,9 @@
 package com.csmithswim;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Console {
@@ -15,4 +19,20 @@ public class Console {
         return choice - 1;
     }
 
+     static public List<Integer> getChoices(){
+         System.out.println("Pick any die 1-5 to re-roll: ");
+         String choice = scanner.nextLine();
+         String splitChoice[] = choice.split("");
+         List<Integer> choices = new ArrayList<>();
+
+         for (var i : splitChoice) {
+             int userInput = Integer.parseInt(i)-1;
+             choices.add(userInput);
+         }
+
+         return choices;
+     }
+
 }
+
+
