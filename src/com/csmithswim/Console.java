@@ -19,6 +19,20 @@ public class Console {
         return choice - 1;
     }
 
+    //Cliff's
+    //Always do logic, then validation and then sanitization
+    static public List<Integer> getChoicesCliff(){
+        List<Integer> choices = new ArrayList<>();
+        System.out.println("Which dice do you want to re roll?");
+        String input = scanner.next();
+        String[] inputArray = input.split(" ");
+        for (String number : inputArray) {
+            choices.add(Integer.parseInt(number) -1);
+        }
+        return choices;
+    }
+
+    //my solution
      static public List<Integer> getChoices(){
          System.out.println("Pick any die 1-5 to re-roll: ");
          String choice = scanner.nextLine();

@@ -2,6 +2,9 @@ package com.csmithswim;
 
 import java.util.Random;
 
+//Start a game class
+//Get a yahtzee test case
+
 public class Main {
 
     public static void main(String[] args) {
